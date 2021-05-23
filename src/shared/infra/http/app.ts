@@ -1,3 +1,4 @@
+import 'reflect-metadata';
 import 'express-async-errors';
 
 import express, { Request, Response, NextFunction } from 'express';
@@ -6,6 +7,9 @@ import { errors } from 'celebrate';
 
 import { AppError } from 'src/shared/error/AppError';
 import { Routes } from './routes/index.routes';
+
+import '@shared/container/index'; // Dependency injection container
+import '@shared/infra/database/typeorm/index'; // Postgres database connection
 
 const App = express();
 
@@ -25,7 +29,7 @@ App.use((err: Error, request: Request, response: Response, _: NextFunction) => {
   console.log(err); // Temporary
 
   return response.status(500).json({
-    statue: 'Error',
+    status: 'Error',
     message: 'Internal Server Error',
   });
 });

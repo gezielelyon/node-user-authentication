@@ -75,7 +75,8 @@ module.exports = {
       },
     ],
     "import/no-extraneous-dependencies": 'off',
-    'import-helpers/order-imports': 'off'
+    'import-helpers/order-imports': 'off',
+    'camelcase': 'off'
   },
   settings: {
     'import/resolver': {
