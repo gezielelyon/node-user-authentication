@@ -76,7 +76,9 @@ module.exports = {
     ],
     "import/no-extraneous-dependencies": 'off',
     'import-helpers/order-imports': 'off',
-    'camelcase': 'off'
+    'camelcase': 'off',
+    '@typescript-eslint/naming-convention': "off",
+    '@typescript-eslint/explicit-module-boundary-types': 'off'
   },
   settings: {
     'import/resolver': {
