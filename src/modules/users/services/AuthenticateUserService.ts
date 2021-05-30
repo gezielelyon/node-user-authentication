@@ -46,8 +46,6 @@ class AuthenticateUserService {
       throw new AppError('Incorrect email/password combination');
     }
 
-    delete user.password;
-
     const token = await this.jwtProvider.generate(user.id);
 
     return {

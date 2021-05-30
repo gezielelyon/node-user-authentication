@@ -1,0 +1,6 @@
+esqueceu a senha
+enviar email
+alterar a senha
+teste unitário
+adicionar coluna para avatar do usuário
+fazer upload da foto
