@@ -6,7 +6,7 @@ import express, { Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import { errors } from 'celebrate';
 
-import { AppError } from 'src/shared/error/AppError';
+import { AppError } from '@shared/error/AppError';
 import { Routes } from './routes/index.routes';
 
 import '@shared/container/index'; // Dependency injection container
